@@ -1,0 +1,26 @@
+### Health Check
+GET http://localhost:8080/
+
+### Get All Users (should be empty after delete)
+GET http://localhost:8080/cashKuber
+
+### Insert Multiple Users
+POST http://localhost:8080/cashKuber
+Content-Type: application/json
+api-key: moneyview
+
+[
+  {
+    "name": "Rahul Kumar",
+    "phone": "9876543210",
+    "pan": "ABCDE1234F",
+    "partnerId": "PARTNER123"
+  },
+  {
+    "name": "Priya Singh",
+    "phone": "9876543211",
+    "pan": "XYZAB5678G",
+    "partnerId": "PARTNER123"
+  }
+]
+
