@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: supabase-api
+    env: docker
+    plan: free
+    dockerfilePath: ./dockerfile
+    envVars:
+      - key: SUPABASE_CONNECTION
+        value: Host=aws-1-ap-south-1.pooler.supabase.com;Database=postgres;Username=postgres.diljxhjhtvimaqjpslgg;Password=Karan@1998;Port=5432
